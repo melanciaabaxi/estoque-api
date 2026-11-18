@@ -1,0 +1,15 @@
+$kind: http-request
+name: Criar Produto
+order: 2000
+method: POST
+url: '{{base_url}}/produtos'
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nome": "Produto Exemplo",
+      "quantidade": 10,
+      "preco": 29.99
+    }

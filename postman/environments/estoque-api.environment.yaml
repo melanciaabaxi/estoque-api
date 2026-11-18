@@ -1,0 +1,8 @@
+name: Estoque API - Local
+values:
+  - key: base_url
+    value: 'http://localhost:3000'
+    enabled: true
+  - key: id
+    value: '1'
+    enabled: true

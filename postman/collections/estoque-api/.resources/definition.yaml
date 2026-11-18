@@ -1,0 +1,7 @@
+$kind: collection
+name: Estoque API
+description: |-
+  Coleção gerada a partir da implementação do projeto estoque-api.
+  Contém os endpoints definidos em server.js para gerenciamento de produtos.
+variables:
+  base_url: ""
