@@ -5,7 +5,7 @@ dotenv.config();
 
 
 import express, { json, urlencoded } from 'express';
-import {loggerMiddleware, valorProdutoMiddleware} from './src/middleware/index.js'
+import {loggerMiddleware} from './src/middleware/index.js'
 const app = express();
 const port = 3000;
 
@@ -14,7 +14,7 @@ app.use(json()),
 app.use(urlencoded({ extended: true }));
 
 app.use(loggerMiddleware)
-app.use(valorProdutoMiddleware)
+///app.use(valorProdutoMiddleware)
 
 app.get('/', function(req,res){ 
     res.status(200).json({
